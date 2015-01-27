@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.nunocky.fakebrowser">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name=".AppController">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".BookmarkActivity"
+            android:label="@string/title_activity_bookmark" />
+
+        <activity
+            android:name=".CreateActivity"
+            android:label="@string/title_activity_create" />
+
+        <activity
+            android:name=".EditActivity"
+            android:label="@string/title_activity_edit" />
+
+        <provider
+            android:name=".bookmark.BookmarkProvider"
+            android:authorities="org.nunocky.fakebrowser.provider"
+            android:enabled="true"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
