@@ -1,2 +1,3 @@
 # FakeBrowser
-Study of implementing Android content provider and how to use it
+Androidのコンテントプロバイダの実装、およびそれの使用方法。
+
